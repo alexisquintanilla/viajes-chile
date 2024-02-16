@@ -7,3 +7,11 @@
     padding-left: 12rem;
 
 }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-info);
+}
+
+.bg-nav {
+    background-color: #2e98a6;
+}

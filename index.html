@@ -19,7 +19,7 @@
 
 <body>
     <!-- navegador usuario -->
-    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark text-white">
+    <nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark text-white">
         <div class="container">
             <div>
                 <img src="./assets/img/viajes.svg" height="30px" alt="logo">
@@ -31,10 +31,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <nav class="navbar-nav ms-auto ">
-                    <a class="nav-link active p-3" aria-current="page" href="#">Inicio</a>
-                    <a class="nav-link p-3" href="#">Quienes Somos</a>
-                    <a class="nav-link p-3" href="#">Destacadas</a>
-                    <a class="nav-link p-3" href="#">Contacto</a>
+                    <a class="nav-link active p-3" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link p-3" href="#quienes">Quienes Somos</a>
+                    <a class="nav-link p-3" href="#destacadas">Destacadas</a>
+                    <a class="nav-link p-3" href="#contacto">Contacto</a>
                 </nav>
             </div>
         </div>
@@ -42,7 +42,7 @@
     </nav>
     <header>
         <!-- carrusel -->
-        <section>
+        <section id="inicio">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators  mb-auto">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -95,7 +95,7 @@
     <main class="bg-black text-white">
 
         <!-- quienes somos -->
-        <section class="container">
+        <section id="quienes" class="container d-none d-md-block">
             <div class="text-center py-5">
                 <h3>QUIÉNES SOMOS</h3>
                 <hr class="mt-5 mb-3" />
@@ -171,7 +171,7 @@
         </section>
         <!-- destacados -->
         <section class="py-5 text-center container">
-            <h3>Destacados</h3>
+            <h3 id="destacadas">Destacados</h3>
             <hr class="mt-5 mb-3" />
             <section class="row pt-4">
                 <article class="col-12 col-md-6 col-lg-3 py-4">
@@ -229,7 +229,7 @@
         </section>
 
         <!-- formulario -->
-        <form class="container pb-5">
+        <form id="contacto" class="container pb-5">
             <div class="text-center">
                 <h3>CONTACTO</h3>
                 <hr class="mt-4 mb-3" />
@@ -249,10 +249,12 @@
                 <label for="text-form" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="text-form" rows="6"></textarea>
             </div>
-            <button type="submit" class="btn btn-info">Enviar</button>
+            <button id="enviarMensaje" type="submit" class="btn btn-info" data-bs-toggle="tooltip"
+                data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                data-bs-title="Presiona para enviar a tu Mensaje">Enviar</button>
         </form>
     </main>
-
+    <!-- footer -->
     <footer class="bg-info py-4">
         <div class="container text-white">
             <section class="row">
