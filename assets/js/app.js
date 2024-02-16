@@ -15,12 +15,13 @@ $(document).ready(function () {
         alert("El mensaje fue enviado correctamente...");
     });
 
-});
-// https://www.youtube.com/watch?v=ZeSkF7Jb2PU&ab_channel=Bluuweb  funcion creada por Ignacio
-$(window).scroll(function () {
-    if ($("#menu").offset().top > 56) {
-        $("#menu").addClass("bg-nav");
-    } else {
-        $("#menu").removeClass("bg-nav");
-    }
+    // https://www.youtube.com/watch?v=ZeSkF7Jb2PU&ab_channel=Bluuweb  funcion creada por Ignacio
+    $(window).scroll(function () {
+        if ($("#menu").offset().top > 56) {
+            $("#menu").addClass("bg-nav");
+        } else {
+            $("#menu").removeClass("bg-nav");
+        }
+    });
+
 });
