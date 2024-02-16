@@ -97,7 +97,7 @@
         <!-- quienes somos -->
         <section class="container">
             <div class="text-center py-5">
-                <h2>QUIÉNES SOMOS</h2>
+                <h3>QUIÉNES SOMOS</h3>
                 <hr class="mt-5 mb-3" />
             </div>
             <section class="row">
@@ -171,7 +171,7 @@
         </section>
         <!-- destacados -->
         <section class="py-5 text-center container">
-            <h2>Destacados</h2>
+            <h3>Destacados</h3>
             <hr class="mt-5 mb-3" />
             <section class="row pt-4">
                 <article class="col-12 col-md-3 py-4">
@@ -226,9 +226,31 @@
                     </div>
                 </article>
             </section>
-
-
         </section>
+
+        <!-- formulario -->
+        <form class="container">
+            <div class="text-center">
+                <h3>CONTACTO</h3>
+                <hr class="mt-4 mb-3" />
+            </div>
+            <div class="mb-3">
+                <label for="nombre-form" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre-form" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="asunto-form" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto-form" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="text-form" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="text-form" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info">Enviar</button>
+        </form>
 
 
     </main>
