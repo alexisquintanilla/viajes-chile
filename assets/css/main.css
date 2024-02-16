@@ -1,35 +1,29 @@
-.ali-footer-end {
-    padding-right: 12rem;
-
-}
-
-.ali-footer-star {
-    padding-left: 12rem;
-
-}
-
+/* cambiar color tooltip */
 .custom-tooltip {
     --bs-tooltip-bg: var(--bs-info);
 }
 
+/* color menu */
 .bg-nav {
     background-color: #2e98a6;
 }
 
-p {
+/* tipografia */
+body {
     font-family: "Roboto", sans-serif;
+}
+
+p {
     font-weight: 300;
     font-style: normal;
 }
 
 h5 {
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h3 {
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
